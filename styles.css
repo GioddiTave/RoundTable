@@ -34,8 +34,20 @@ body {
     margin-bottom: 0.5em;
     color: #fff;
   }
+
+  h3 {
+    font-family: 'Karla', sans-serif;
+    color: #fff;
+
+  }
   
   p {
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 1.2em;
+    color: #fff;
+  }
+
+  ul {
     font-family: 'Karla', sans-serif;
     margin-bottom: 1.2em;
     color: #fff;
@@ -120,6 +132,34 @@ body {
       max-width: 110ch;
     }
   }
+
+  .summary-box {
+    /* Hintergrund passend zum dunklen Theme, aber etwas abgehoben */
+    background-color: #003a66;
+    border: 2px solid #004080;
+    color: #fff;
+    
+    /* Abstände innen und außen, damit es “luftiger” wirkt */
+    padding: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+    /* Runde Ecken (optional) */
+    border-radius: 2px;
+  }
+  
+  /* Überschriften im Box-Bereich können etwas herausstechen */
+  .summary-box h1,
+  .summary-box h2 {
+    color: #fff; 
+  }
+  
+  /* Listenpunkte ggf. etwas mehr Einrückung oder andere Marker */
+  .summary-box ul {
+    margin-left: 1.5em;
+    list-style-type: disc;
+  }
+  
   
   /* ========== FOOTER ========== */
   footer {
