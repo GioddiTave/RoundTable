@@ -1,25 +1,29 @@
-/* --- Grundlegende Seiteneinstellungen --- */
+/* ========== GRUNDEINSTELLUNGEN ========== */
 body {
+    /* Dunkelblauer Hintergrund */
+    background-color: #001f3f;
+    /* Text in Weiß für guten Kontrast */
+    color: #fff;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+    /* Etwas höherer Zeilenabstand für bessere Lesbarkeit */
+    line-height: 1.7;
     font-size: 16px;
   }
   
   .container {
     margin: 0 auto;
     padding: 1em;
-    background-color: #fff;
+    background-color: transparent; 
   }
   
-  /* --- Typografie --- */
+  /* ========== TYPOGRAFIE ========== */
   h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    color: #fff;
   }
   
   h2 {
@@ -28,18 +32,20 @@ body {
     font-size: 1.5em;
     margin-top: 1em;
     margin-bottom: 0.5em;
+    color: #fff;
   }
   
   p {
     font-family: 'Karla', sans-serif;
     margin-bottom: 1.2em;
+    color: #fff;
   }
   
   section {
     margin-bottom: 2em;
   }
   
-  /* --- Bilder + Beschriftung --- */
+  /* ========== BILDER ========== */
   figure {
     margin: 1.5em 0;
     text-align: center;
@@ -55,17 +61,19 @@ body {
     font-style: italic;
     font-size: 0.9em;
     margin-top: 0.5em;
+    color: #ddd;
   }
   
-  /* --- Bereich der Teilnehmenden (Dropdown) direkt unterm Titel --- */
+  /* ========== TEILNEHMENDEN-LISTE (DROPDOWN) ========== */
   .participants {
     margin-top: 1em;
     margin-bottom: 2em;
   }
   
-  /* Details/summary-Styling */
+  /* Hintergrund-Farbe "helleres Blau" + weiße Schrift */
   details {
-    background-color: #f1f1f1;
+    background-color: #003a66; 
+    color: #fff;
     padding: 1em;
     border-radius: 4px;
     margin-top: 1em;
@@ -76,6 +84,7 @@ body {
     font-weight: 700;
     cursor: pointer;
     margin-bottom: 0.5em;
+    color: #fff;
   }
   
   details ul {
@@ -88,53 +97,59 @@ body {
     margin: 0.3em 0;
   }
   
+  /* Wenn "aufgeklappt", etwas hellerer Blauton */
   details[open] {
-    background-color: #e2e2e2;
+    background-color: #004080;
   }
   
-  /* --- Zeilenlänge 45–75 Zeichen für Mobil/Tablet ---
-     Ab Desktop (1024px): 2 Spalten à ~45 Zeichen => ~90ch
+  /* ========== HAUPTINHALT / ZEILENBREITE ========== */
+  /* 
+     Mobil/Tablet: ~75 Zeichen => 75ch 
+     Desktop ab 1024px: 2 Spalten, ~55 Zeichen je Spalte => 110ch 
   */
   .article-content {
     margin: 0 auto;
-    max-width: 75ch; /* ~75 Zeichen */
+    max-width: 75ch;
     padding: 1em;
   }
   
   @media (min-width: 1024px) {
     .article-content {
       column-count: 2;
-      column-gap: 2em;
-      max-width: 90ch; /* 2 Spalten à ~45 Zeichen */
+      column-gap: 3em; 
+      max-width: 110ch;
     }
   }
   
-  /* --- Footer --- */
+  /* ========== FOOTER ========== */
   footer {
     padding: 1em;
-    background-color: #f1f1f1;
+    background-color: #00183a; /* etwas dunkler als der Body */
     margin-top: 2em;
   }
   
-  /* Container für zwei Spalten auf Desktop */
   .footer-container {
     display: flex;
-    flex-direction: column; /* Mobil: untereinander */
+    flex-direction: column; /* Mobil untereinander */
     gap: 1em;
   }
   
   /* Jede Spalte separat */
   .footer-col {
     flex: 1;
-    /* So verteilen sich die Spalten gleichmäßig auf Desktop */
   }
   
   /* Footer-Infos */
   .footer-info p {
     margin: 0.4em 0;
+    color: #fff;
   }
   
-  /* Logos im Footer */
+  .footer-info strong {
+    color: #fff;
+  }
+  
+  /* Footer-Logos */
   .footer-logos {
     display: flex;
     justify-content: center;
@@ -148,9 +163,10 @@ body {
     max-width: 100px;
   }
   
+  /* Links im Footer: */
   footer a {
     text-decoration: none;
-    color: #333;
+    color: #ADD8E6; /* ein hellblauer Farbton */
   }
   
   footer a:hover {
@@ -163,18 +179,15 @@ body {
     font-size: 0.8em;
     text-align: center;
     margin-top: 1em;
+    color: #ccc;
   }
   
-  /* Ab 1024px: Footer in zwei Spalten nebeneinander */
+  /* Zwei-Spalten-Layout im Footer ab 1024px */
   @media (min-width: 1024px) {
     .footer-container {
       flex-direction: row;
-      justify-content: space-between; /* Platz zwischen den Spalten */
+      justify-content: space-between;
       align-items: flex-start;
-    }
-    .footer-col {
-      /* Je nach Wunsch kannst du hier eine feste Breite vergeben 
-         oder einfach flex: 1 lassen, damit sie sich gleichmäßig verteilen. */
     }
   }
   
