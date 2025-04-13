@@ -145,7 +145,7 @@ body {
     margin-bottom: 2em;
     
     /* Runde Ecken (optional) */
-    border-radius: 2px;
+    border-radius: 4px;
   }
   
   /* Überschriften im Box-Bereich können etwas herausstechen */
