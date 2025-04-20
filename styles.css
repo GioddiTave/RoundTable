@@ -1,7 +1,7 @@
 /* ========== GRUNDEINSTELLUNGEN ========== */
 body {
     /* Dunkelblauer Hintergrund */
-    background-color: #001f3f;
+    background-color: #1B5276;
     /* Text in Weiß für guten Kontrast */
     color: #fff;
     margin: 0;
@@ -84,7 +84,7 @@ body {
   
   /* Hintergrund-Farbe "helleres Blau" + weiße Schrift */
   details {
-    background-color: #003a66; 
+    background-color: #34B298; 
     color: #fff;
     padding: 1em;
     border-radius: 4px;
@@ -111,7 +111,7 @@ body {
   
   /* Wenn "aufgeklappt", etwas hellerer Blauton */
   details[open] {
-    background-color: #004080;
+    background-color: #34B298;
   }
   
   /* ========== HAUPTINHALT / ZEILENBREITE ========== */
@@ -135,8 +135,8 @@ body {
 
   .summary-box {
     /* Hintergrund passend zum dunklen Theme, aber etwas abgehoben */
-    background-color: #003a66;
-    border: 2px solid #004080;
+    background-color: #3A97D3;
+    border: 2px solid #3A97D3;
     color: #fff;
     
     /* Abstände innen und außen, damit es “luftiger” wirkt */
